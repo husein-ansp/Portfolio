@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% block title %}
+Projects | Husein Ansaripoor
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">
+            MY WORK
+        </span>
+        <h1>
+            Selected
+            <span>Projects</span>
+        </h1>
+        <p>
+            A collection of websites and interfaces I have designed and built.
+        </p>
+    </div>
+</section>
+<section class="projects-section">
+    <div class="container">
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+            <button class="filter-btn" data-filter="authentication">
+                Authentication
+            </button>
+            <button class="filter-btn" data-filter="dashboard">
+                Dashboard
+            </button>
+            <button class="filter-btn" data-filter="landing">
+                Landing Pages
+            </button>
+            <button class="filter-btn" data-filter="other">
+                Other
+            </button>
+        </div>
+        <div class="row g-4 projects-grid">
+            <div class="col-md-6 col-lg-4 project-item authentication">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">
+                            Authentication
+                        </span>
+                        <h2>
+                            Modern Login Page
+                        </h2>
+                        <p>
+                            A modern and responsive login page with
+                            clean UI and smooth interactions.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn project-demo">
+                                Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn project-github">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item authentication">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="bi bi-person-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">
+                            Authentication
+                        </span>
+                        <h2>
+                            Register Page
+                        </h2>
+                        <p>
+                            A clean registration interface with
+                            modern form design.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn project-demo">
+                                Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn project-github">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item dashboard">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="bi bi-grid"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">
+                            Dashboard
+                        </span>
+                        <h2>
+                            Admin Dashboard
+                        </h2>
+                        <p>
+                            A modern dashboard interface with
+                            statistics and navigation.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn project-demo">
+                                Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn project-github">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item landing">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="bi bi-window"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">
+                            Landing Page
+                        </span>
+                        <h2>
+                            Modern Landing Page
+                        </h2>
+                        <p>
+                            A beautiful landing page designed for
+                            a modern digital product.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn project-demo">
+                                Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn project-github">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="coming-soon">
+            <div class="coming-soon-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <div>
+                <h3>
+                    More Projects Coming Soon
+                </h3>
+                <p>
+                    I'm always learning and building something new.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

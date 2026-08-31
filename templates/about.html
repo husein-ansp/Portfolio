@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}
+About | Husein Ansaripoor
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">
+            ABOUT ME
+        </span>
+        <h1>
+            A Little
+            <span>About Me</span>
+        </h1>
+        <p>
+            Get to know me, my interests and my journey in web development.
+        </p>
+    </div>
+</section>
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="about-content">
+                    <span class="section-label">
+                        WHO AM I?
+                    </span>
+                    <h2>
+                        I'm Husein,
+                        <span>a Web Developer.</span>
+                    </h2>
+                    <p>
+                        I'm passionate about web development and creating
+                        modern digital experiences.
+                    </p>
+                    <p>
+                        I enjoy learning new technologies, building projects
+                        and improving my skills through real-world practice.
+                    </p>
+                    <div class="about-info">
+                        <div>
+                            <strong>Focus</strong>
+                            <span>Frontend Development</span>
+                        </div>
+                        <div>
+                            <strong>Technologies</strong>
+                            <span>HTML, CSS, JavaScript, Bootstrap</span>
+                        </div>
+                        <div>
+                            <strong>Backend</strong>
+                            <span>Django</span>
+                        </div>
+                    </div>
+                    <a href="{% url 'projects' %}" class="btn primary-btn">
+                        Explore My Work
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% block title %}
+Contact | Husein Ansaripoor
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">
+            GET IN TOUCH
+        </span>
+        <h1>
+            Let's Build
+            <span>Something Great</span>
+        </h1>
+        <p>
+            Have a project in mind? Feel free to get in touch.
+        </p>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <span class="section-label">
+                        CONTACT ME
+                    </span>
+                    <h2>
+                        Let's Talk
+                    </h2>
+                    <p>
+                        I'm always interested in new projects,
+                        ideas and opportunities.
+                    </p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <strong>
+                                your-email@example.com
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <div>
+                            <span>GitHub</span>
+                            <strong>
+                                github.com/yourusername
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <div>
+                            <span>LinkedIn</span>
+                            <strong>
+                                linkedin.com/in/yourusername
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-form-card">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="name">
+                                    Your Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">
+                                    Your Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject">
+                                    Subject
+                                </label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    class="form-control"
+                                    placeholder="What is your project about?"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message">
+                                    Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-control"
+                                    rows="6"
+                                    placeholder="Tell me about your project..."
+                                    required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button
+                                    type="submit"
+                                    class="btn primary-btn">
+                                    Send Message
+                                    <i class="bi bi-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
